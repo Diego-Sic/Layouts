@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="82.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <AnchorPane layoutX="457.0" prefHeight="17.0" prefWidth="141.0">
+                     <opaqueInsets>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </opaqueInsets>
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <children>
+                        <TextField layoutX="-4.0" layoutY="-4.0" text="Site Utilities" />
+                     </children>
+                  </AnchorPane>
+                  <TextField layoutY="16.0" prefHeight="14.0" prefWidth="149.0" text="Site Name" />
+                  <TextField layoutY="-4.0" text="Olin Hall Gov. Logo" />
+                  <TextField layoutX="225.0" layoutY="6.0" text="Site Branding" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextField layoutX="14.0" layoutY="6.0" text="Site Navigation" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </top>
+   <right>
+      <SplitPane dividerPositions="0.48575949367088606" orientation="VERTICAL" prefHeight="246.0" prefWidth="125.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="94.0" prefWidth="80.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="91.0" prefWidth="76.0" />
+        </items>
+      </SplitPane>
+   </right>
+   <bottom>
+      <SplitPane dividerPositions="0.75390625" orientation="VERTICAL" prefHeight="130.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        </items>
+      </SplitPane>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="189.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="277.0" />
+         </children></Pane>
+   </center>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <children>
+            <TextField layoutX="14.0" layoutY="14.0" text="Section Navigation" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="189.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         </children></Pane>
+   </left>
+</BorderPane>
